@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/3d95353619.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css"
+      integrity="sha256-ujE/ZUB6CMZmyJSgQjXGCF4sRRneOimQplBVLu8OU5w="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Location Finder</title>
+  </head>
+  <body>
+    <section class="hero hero-body is-dark container">
+      <h1 class="title">US Location Info</h1>
+      <h2 class="subtitle">Enter a zip code to get the location info</h2>
+      <form id="zipForm">
+        <div class="field">
+          <div class="control has-icons-left has-icons-right">
+            <input
+              class="input zip is-large"
+              type="text"
+              placeholder="Enter zip code..."
+            />
+            <span class="icon is-small is-left">
+              <i class="fas fa-map-pin"></i>
+            </span>
+            <span class="icon is-small is-right icon-check">
+              <i class="fas fa-check"></i>
+            </span>
+            <span class="icon is-small is-right icon-times">
+              <i class="fas fa-times"></i>
+            </span>
+          </div>
+        </div>
+      </form>
+    </section>
+    <br />
+    <div class="container">
+      <div id="output"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
